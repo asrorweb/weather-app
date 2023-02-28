@@ -10,10 +10,18 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <video src="video/cloudly.mp4" type="video/mp4" autoplay loop muted>
-            <!-- <source src="video/cloudly.mp4" type="video/mp4" />
-            <source src="video/rain.mp4" type="video/mp4" />
-            <source src="video/sun.mp4" type="video/mp4" /> -->
+        <video
+            src="video/cloudly.mp4"
+            autoplay="autoplay"
+            loop="loop"
+            muted
+            [muted]="'muted'"
+            defaultMuted
+            playsinline
+            oncontextmenu="return false;"
+            preload="auto"
+            id="myVideo"
+        >
             Your browser does not support the video tag.
         </video>
 
